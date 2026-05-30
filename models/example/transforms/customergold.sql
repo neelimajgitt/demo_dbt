@@ -1,0 +1,4 @@
+{{ config(materialized="table",schema='gold',alias='customer') }}
+select country, count(distinct customer_id) as number_of_customers
+from {{ ref("customers_transformed") }}
+group by country
