@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: customer_cleanse
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: email
+        tests:
+          - not_null
+              
+
