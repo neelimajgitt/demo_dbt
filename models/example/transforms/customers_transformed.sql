@@ -1,5 +1,5 @@
 {{
-    config(materialized='table',schema='gold',)
+    config(materialized='table',schema='gold',tags=['customerdaily'])
             
 }}
 select a.*, b.order_id

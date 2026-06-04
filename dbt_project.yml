@@ -44,3 +44,10 @@ models:
       +schema: dbt
     staging:
       +schema: RETAIL
+vars:
+  domain: retail
+
+snapshots:
+  +persist_docs:
+    relation: true
+    columns: true
